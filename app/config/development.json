@@ -1,0 +1,26 @@
+{
+    "mongodb": {
+        "host": "data02.salampakistan.gov.pk",
+        "port": 27017,
+        "username": "ptdc",
+        "password": "ptdc",
+        "db": "ptdc"
+    },
+    "newrelic": {
+        "licenseKey": "44a93f10b16623a6c1189f679ecbe21cf8a92482"
+    },
+    "logs": {
+        "token": "f67e8b60-987d-4b11-98d4-bafac109886a"
+    },
+    "sendgrid": {
+        "apiKey": "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"
+    },
+    "azureStorage": {
+        "accountName": "production9240",
+        "accessKey": "OftOmXdglDHKohE+slB0HJtqbMRgT2oQmC3fv+f+tScJA/YgKE6xjGlkQnOgJdWUtu5JpB6ev3SZufdqZ6QIAw=="
+    },
+    "bookMe": {
+        "api_key": "64c58885c6a822719526ad185d3e9b4a",
+        "Authorization": "8ce9f7c706fd0c92de5cec67bc5cb1bb60824102e3af8e27b2a20d7443e9d335"
+    }
+}

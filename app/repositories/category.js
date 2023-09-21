@@ -1,0 +1,259 @@
+'use strict';
+
+const Category = require('../models/Category');
+
+const _ = require('lodash');
+// const Event = require('../models/Event');
+// const moment = require('moment');
+const mongoose = require('mongoose');
+
+module.exports = {
+  create,
+  get,
+  findById,
+  update,
+  remove,
+  getByName,
+  countCategory,
+  findOneAndUpdate,
+  getSingleById,
+  addPhoto,
+  removePhoto,
+  findDetails
+};
+
+function create(payload) {
+  let data = {
+    name: payload.name,
+    alias: payload.alias,
+    description: payload.description,
+    longDescription: payload.longDescription,
+    location: payload.location,
+    categoryType: payload.categoryType,
+    isFeatured: payload.isFeatured
+  };
+  data.slug = _.kebabCase(payload.name);
+  data.url = '/category/' + data.slug;
+  data.createdBy = payload.auth.userId;
+  data = _.omitBy(data, _.isUndefined);
+  return Category.create(data);
+}
+function get(payload) {
+
+  let payloadSkip = payload.skip;
+  let payloadPageSize = payload.pageSize;
+  if (payload.pageSize === 0) {
+    payloadSkip = 0;
+    payloadPageSize = { $size: '$data' };
+  }
+
+  let matchObj = { isActive: true };
+  if (payload && payload.search) {
+    var search = payload.search;
+    matchObj['name'] = new RegExp(search, 'i');
+  }
+  if (payload && payload.categoryType !== undefined) {
+    matchObj['categoryType'] = payload.categoryType;
+  }
+  if (payload.isFeatured) {
+    if (payload.isFeatured === 'true' || payload.isFeatured === true) {
+      matchObj.isFeatured = true;
+    } else if (payload.isFeatured === 'false' || payload.isFeatured === false) {
+      matchObj.isFeatured = false;
+    }
+  }
+
+  matchObj = _.omitBy(matchObj, _.isUndefined);
+  let pipeline = [{
+    $match: matchObj
+  },
+  {
+    $sort: { createdAt: -1 }
+  },
+  {
+    $project: {
+      _id: 1,
+      isActive: 1,
+      name: 1,
+      alias: 1,
+      categoryType: 1,
+      type: 1,
+      description: 1,
+      longDescription: 1,
+      slug: 1,
+      url: 1,
+      photoIds: 1,
+      location: 1,
+      isFeatured: 1
+    }
+  },
+  {
+    $group: {
+      _id: null,
+      data: {
+        $push: '$$ROOT'
+      }
+    }
+  },
+  {
+    $project: {
+      data: {
+        $slice: ['$data', payloadSkip, payloadPageSize]
+      },
+      total: {
+        $size: '$data'
+      }
+    }
+  }
+  ];
+  return Category.aggregate(pipeline).exec()
+    .then((response) => {
+      response = _.head(response);
+      if (!response) {
+        response = {
+          total: 0,
+          data: []
+        };
+      }
+      return response;
+    });
+}
+function findById(categoryId) {
+  return Category.findOne({
+    _id: categoryId
+  })
+    .lean();
+}
+function update(payload) {
+  let data = {
+    name: payload.name,
+    alias: payload.alias,
+    isActive: payload.isActive,
+    categoryType: payload.categoryType,
+    description: payload.description,
+    longDescription: payload.longDescription,
+    location: payload.location,
+    isFeatured: payload.isFeatured
+  };
+  data.slug = _.kebabCase(payload.name);
+  data.url = '/category/' + data.slug;
+  data.updatedBy = payload.auth.userId;
+  data = _.omitBy(data, _.isUndefined);
+  return Category.update({
+    _id: payload.categoryId
+  }, {
+    $set: data
+  });
+}
+function remove(payload) {
+  let data = {
+    isActive: false
+  };
+  return Category.update({
+    _id: payload.categoryId
+  }, {
+    $set: data
+  });
+}
+// function getCategoryIdByName(payload) {
+//   let search = new RegExp(payload, 'i');
+//   return Category.findOne({'name': search}).lean(true);
+// }
+
+function getByName(payload) {
+  // let search = new RegExp(payload, 'i');
+  return Category.find({ name: payload }, { name: 1 }).lean(true);
+}
+
+async function countCategory(category) {
+  // let currentDate = moment().tz('Asia/Karachi').valueOf();
+  let countTemp = 0;
+  //  let search = new RegExp(payload, 'i');
+  // countTemp = await Event.count({ categories: category, status: 'published',
+  //   $or: [{
+  //     'availability.date': { $gte: currentDate}
+  //   }, {
+  //     'availability.type': 'weekly'
+  //   }, {
+  //     'availability.type': 'fixedDate'
+  //   }, {
+  //     'availability.type': 'daily'
+  //   }
+  //   ]
+  // });
+  return countTemp;
+}
+
+function findOneAndUpdate(categoryObject) {
+  return Category.findOneAndUpdate(
+    { _id: categoryObject._id },
+    { tripCount: categoryObject.tripCount }
+  );
+}
+
+function getSingleById(categoryId) {
+  return Category.findOne({ '_id': { $in: categoryId } })
+    .lean();
+}
+
+function addPhoto(payload) {
+  let data = {
+    photoIds: payload.photoId
+  };
+
+  return Category.update({
+    _id: payload.categoryId
+  }, {
+    $push: data
+  });
+}
+
+function removePhoto(payload) {
+  let data = {
+    photoIds: payload.photoId
+  };
+
+  return Category.update({
+    _id: payload.categoryId
+  }, {
+    $pull: data
+  });
+}
+function findDetails(identifier) {
+
+  let match = {};
+  if (identifier instanceof mongoose.Types.ObjectId || typeof eventIdentifier === 'string') {
+    match._id = mongoose.Types.ObjectId(identifier.id);
+  }
+
+  if (identifier.slug) {
+    match.slug = identifier.slug;
+  }
+
+  if (identifier.id) {
+    match._id = mongoose.Types.ObjectId(identifier.id);
+  }
+  let pipeline = [
+    {
+      $match: match
+    },
+    {
+      $project: {
+        _id: 1,
+        isActive: 1,
+        name: 1,
+        alias: 1,
+        type: 1,
+        description: 1,
+        longDescription: 1,
+        slug: 1,
+        url: 1,
+        photoIds: 1,
+        location: 1,
+        isFeatured: 1
+      }
+    }
+  ];
+  return Category.aggregate(pipeline).exec()
+    .then(_.head);
+}

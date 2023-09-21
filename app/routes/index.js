@@ -1,0 +1,38 @@
+'use strict';
+
+module.exports = server => {
+  require('./auth')(server);
+  require('./user')(server);
+  require('./activity')(server);
+  require('./category')(server);
+  require('./location')(server);
+  require('./sublocation')(server);
+  require('./startinglocation')(server);
+  require('./tag')(server);
+  require('./service')(server);
+  require('./equipment')(server);
+  require('./facility')(server);
+  require('./welcome')(server);
+  require('./accommodation')(server);
+  require('./review')(server);
+  require('./currency')(server);
+  require('./trip')(server);
+  require('./poi')(server);
+  require('./pressRelease')(server);
+  require('./media')(server);
+  require('./season')(server);
+  require('./seasonalEvents')(server);
+  require('./booking')(server);
+  require('./events')(server);
+  require('./bus')(server);
+  require('./cities')(server);
+  require('./transport')(server);
+  require('./airline')(server);
+  require('./hotel')(server);
+  require('./languages')(server);
+  require('./plans')(server);
+  require('./news')(server);
+  require('./userPermissions')(server);
+  require('./payment')(server);
+  require('./easyAdd')(server);
+};

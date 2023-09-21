@@ -1,0 +1,33 @@
+﻿# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+.cache/
+.temp/
+
+# dependencies
+node_modules/
+
+# IDEs and editors
+.idea/
+
+# build tools
+coverage/
+
+# misc
+npm-debug.log
+app/apidoc/
+
+# logs
+app/logs/**
+**/newrelic_agent.log
+**/*.log
+
+# keys
+keys/
+
+# backups
+backups/
+releases/
+
+# web
+app/web/
