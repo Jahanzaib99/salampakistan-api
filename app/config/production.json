@@ -1,9 +1,9 @@
 {
     "mongodb": {
-        "host": "data02.salampakistan.gov.pk",
+        "host": "172.19.20.30",
         "port": 27017,
-        "username": "ptdc",
-        "password": "ptdc",
+        "username": "",
+        "password": "",
         "db": "ptdc"
     },
     "newrelic": {
