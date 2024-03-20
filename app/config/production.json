@@ -1,13 +1,13 @@
 {
     "mongodb": {
-        "host": "172.19.20.30",
+        "host": "10.2.13.196",
         "port": 27017,
-        "username": "",
-        "password": "",
+        "username": "ptdc",
+        "password": "ptdc",
         "db": "ptdc"
     },
     "newrelic": {
-        "licenseKey": "44a93f10b16623a6c1189f679ecbe21cf8a92482"
+        "licenseKey": "309f9dc08c0577a1c0a5fb316f9eb43e8b4bNRAL"
     },
     "logs": {
         "token": "f67e8b60-987d-4b11-98d4-bafac109886a"

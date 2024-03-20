@@ -9,223 +9,8 @@ module.exports = {
   // list of countries for visa on arrival (Tourist)
   onArrival: [
     {
-      'name': 'Angola',
-      'status': true
-    },
-    {
-      'name': 'Argentina',
-      'status': true
-    },
-    {
-      'name': 'Austria',
-      'status': true
-    },
-    {
-      'name': 'Azerbaijan',
-      'status': true
-    },
-    {
-      'name': 'Bahamas',
-      'status': true
-    },
-    {
-      'name': 'Bahrain',
-      'status': true
-    },
-    {
-      'name': 'Barbados',
-      'status': true
-    },
-    {
-      'name': 'Botswana',
-      'status': true
-    },
-    {
-      'name': 'Brunei',
-      'status': true
-    },
-    {
-      'name': 'Costa Rica',
-      'status': true
-    },
-    {
-      'name': 'Finland',
-      'status': true
-    },
-    {
-      'name': 'Germany',
-      'status': true
-    },
-    {
-      'name': 'Ghana',
-      'status': true
-    },
-    {
-      'name': 'Iceland',
-      'status': true
-    },
-    {
-      'name': 'Indonesia',
-      'status': true
-    },
-    {
-      'name': 'Italy',
-      'status': true
-    },
-    {
-      'name': 'Japan',
-      'status': true
-    },
-    {
-      'name': 'Jordan',
-      'status': true
-    },
-    {
-      'name': 'Korea (South)',
-      'status': true
-    },
-    {
-      'name': 'Kuwait',
-      'status': true
-    },
-    {
-      'name': 'Lithuania',
-      'status': true
-    },
-    {
-      'name': 'Luxembourg',
-      'status': true
-    },
-    {
-      'name': 'Malaysia',
-      'status': true
-    },
-    {
-      'name': 'Maldives',
-      'status': true
-    },
-    {
-      'name': 'Malta',
-      'status': true
-    },
-    {
-      'name': 'Monaco',
-      'status': true
-    },
-    {
-      'name': 'Mozambique',
-      'status': true
-    },
-    {
-      'name': 'Nepal',
-      'status': true
-    },
-    {
-      'name': 'New Zealand',
-      'status': true
-    },
-    {
-      'name': 'Oman',
-      'status': true
-    },
-    {
-      'name': 'Paraguay',
-      'status': true
-    },
-    {
-      'name': 'Qatar',
-      'status': true
-    },
-    {
-      'name': 'Rwanda',
-      'status': true
-    },
-    {
-      'name': 'Saint Kitts and Nevis',
-      'status': true
-    },
-    {
-      'name': 'Saint Lucia',
-      'status': true
-    },
-    {
-      'name': 'Saudi Arabia',
-      'status': true
-    },
-    {
-      'name': 'Singapore',
-      'status': true
-    },
-    {
-      'name': 'Spain',
-      'status': true
-    },
-    {
-      'name': 'Sri Lanka',
-      'status': true
-    },
-    {
-      'name': 'Switzerland',
-      'status': true
-    },
-    {
-      'name': 'Tajikistan',
-      'status': true
-    },
-    {
-      'name': 'Tanzania',
-      'status': true
-    },
-    {
-      'name': 'Thailand',
-      'status': true
-    },
-    {
-      'name': 'Tonga',
-      'status': true
-    },
-    {
-      'name': 'Trinidad & Tobago',
-      'status': true
-    },
-    {
-      'name': 'Tunisia',
-      'status': true
-    },
-    {
-      'name': 'Turkey',
-      'status': true
-    },
-    {
-      'name': 'UAE',
-      'status': true
-    },
-    {
-      'name': 'Western Samoa',
-      'status': true
-    },
-    {
-      'name': 'Zambia',
-      'status': true
-    }
-  ],
-  // countries elgible for pakistan online visa
-  online: [
-    {
-      'status': true,
-      'name': 'Albania'
-    },
-    {
-      'status': true,
-      'name': 'Andorra'
-    },
-    {
       'status': true,
       'name': 'Angola'
-    },
-    {
-      'status': true,
-      'name': 'Antigua and Barbuda'
     },
     {
       'status': true,
@@ -253,11 +38,258 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Bangladesh'
+      'name': 'Barbados'
     },
     {
       'status': true,
-      'name': 'Barbados'
+      'name': 'Botswana'
+    },
+    {
+      'status': true,
+      'name': 'Brunei'
+    },
+    {
+      'status': true,
+      'name': 'Canada'
+    },
+    {
+      'status': true,
+      'name': 'China'
+    },
+    {
+      'status': true,
+      'name': 'Costa Rica'
+    },
+    {
+      'status': true,
+      'name': 'Finland'
+    },
+    {
+      'status': true,
+      'name': 'France'
+    },
+    {
+      'status': true,
+      'name': 'Germany'
+    },
+    {
+      'status': true,
+      'name': 'Ghana'
+    },
+    {
+      'status': true,
+      'name': 'Iceland'
+    },
+    {
+      'status': true,
+      'name': 'Indonesia'
+    },
+    {
+      'status': true,
+      'name': 'Iran'
+    },
+    {
+      'status': true,
+      'name': 'Italy'
+    },
+    {
+      'status': true,
+      'name': 'Japan'
+    },
+    {
+      'status': true,
+      'name': 'Jordan'
+    },
+    {
+      'status': true,
+      'name': 'Korea (South)'
+    },
+    {
+      'status': true,
+      'name': 'Kuwait'
+    },
+    {
+      'status': true,
+      'name': 'Lithuania'
+    },
+    {
+      'status': true,
+      'name': 'Luxembourg'
+    },
+    {
+      'status': true,
+      'name': 'Malaysia'
+    },
+    {
+      'status': true,
+      'name': 'Maldives'
+    },
+    {
+      'status': true,
+      'name': 'Malta'
+    },
+    {
+      'status': true,
+      'name': 'Monaco'
+    },
+    {
+      'status': true,
+      'name': 'Mozambique'
+    },
+    {
+      'status': true,
+      'name': 'Nepal'
+    },
+    {
+      'status': true,
+      'name': 'Netherlands'
+    },
+    {
+      'status': true,
+      'name': 'New Zealand'
+    },
+    {
+      'status': true,
+      'name': 'Norway'
+    },
+    {
+      'status': true,
+      'name': 'Oman'
+    },
+    {
+      'status': true,
+      'name': 'Paraguay'
+    },
+    {
+      'status': true,
+      'name': 'Philippines'
+    },
+    {
+      'status': true,
+      'name': 'Poland'
+    },
+    {
+      'status': true,
+      'name': 'Qatar'
+    },
+    {
+      'status': true,
+      'name': 'Russian Federation'
+    },
+    {
+      'status': true,
+      'name': 'Rwanda'
+    },
+    {
+      'status': true,
+      'name': 'Saint Kitts and Nevis'
+    },
+    {
+      'status': true,
+      'name': 'Saint Lucia'
+    },
+    {
+      'status': true,
+      'name': 'Saudi Arabia'
+    },
+    {
+      'status': true,
+      'name': 'Singapore'
+    },
+    {
+      'status': true,
+      'name': 'South Africa'
+    },
+    {
+      'status': true,
+      'name': 'Spain'
+    },
+    {
+      'status': true,
+      'name': 'Sri Lanka'
+    },
+    {
+      'status': true,
+      'name': 'Sweden'
+    },
+    {
+      'status': true,
+      'name': 'Switzerland'
+    },
+    {
+      'status': true,
+      'name': 'Tajikistan'
+    },
+    {
+      'status': true,
+      'name': 'Tanzania'
+    },
+    {
+      'status': true,
+      'name': 'Thailand'
+    },
+    {
+      'status': true,
+      'name': 'Tonga'
+    },
+    {
+      'status': true,
+      'name': 'Trinidad & Tobago'
+    },
+    {
+      'status': true,
+      'name': 'Tunisia'
+    },
+    {
+      'status': true,
+      'name': 'Turkey'
+    },
+    {
+      'status': true,
+      'name': 'United Arab Emirates'
+    },
+    {
+      'status': true,
+      'name': 'United Kingdom'
+    },
+    {
+      'status': true,
+      'name': 'United States of America (USA)'
+    },
+    {
+      'status': true,
+      'name': 'Western Samoa'
+    },
+    {
+      'status': true,
+      'name': 'Zambia'
+    }
+  ],
+  // countries elgible for pakistan online visa
+  online: [
+    {
+      'status': true,
+      'name': 'Albania'
+    },
+    {
+      'status': true,
+      'name': 'Afghanistan'
+    },
+    {
+      'status': true,
+      'name': 'Algeria'
+    },
+    {
+      'status': true,
+      'name': 'Andorra'
+    },
+    {
+      'status': true,
+      'name': 'Antigua and Barbuda'
+    },
+    {
+      'status': true,
+      'name': 'Bangladesh'
     },
     {
       'status': true,
@@ -277,6 +309,10 @@ module.exports = {
     },
     {
       'status': true,
+      'name': 'Bhutan'
+    },
+    {
+      'status': true,
       'name': 'Bolivia'
     },
     {
@@ -285,15 +321,7 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Botswana'
-    },
-    {
-      'status': true,
       'name': 'Brazil'
-    },
-    {
-      'status': true,
-      'name': 'Brunei'
     },
     {
       'status': true,
@@ -317,10 +345,6 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Canada'
-    },
-    {
-      'status': true,
       'name': 'Capbo Verde'
     },
     {
@@ -329,11 +353,11 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Chile'
+      'name': 'Chad'
     },
     {
       'status': true,
-      'name': 'China'
+      'name': 'Chile'
     },
     {
       'status': true,
@@ -349,7 +373,7 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Costa Rica'
+      'name': 'Congo Democratic Republic'
     },
     {
       'status': true,
@@ -370,6 +394,10 @@ module.exports = {
     {
       'status': true,
       'name': 'Czech Republic'
+    },
+    {
+      'status': true,
+      'name': 'Democratic People Republic of Korea'
     },
     {
       'status': true,
@@ -421,14 +449,6 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Finland'
-    },
-    {
-      'status': true,
-      'name': 'France'
-    },
-    {
-      'status': true,
       'name': 'Gabon'
     },
     {
@@ -438,14 +458,6 @@ module.exports = {
     {
       'status': true,
       'name': 'Georgia'
-    },
-    {
-      'status': true,
-      'name': 'Germany'
-    },
-    {
-      'status': true,
-      'name': 'Ghana'
     },
     {
       'status': true,
@@ -489,15 +501,7 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Iceland'
-    },
-    {
-      'status': true,
-      'name': 'Indonesia'
-    },
-    {
-      'status': true,
-      'name': 'Iran'
+      'name': 'Iraq'
     },
     {
       'status': true,
@@ -505,19 +509,7 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Italy'
-    },
-    {
-      'status': true,
       'name': 'Jamaica'
-    },
-    {
-      'status': true,
-      'name': 'Japan'
-    },
-    {
-      'status': true,
-      'name': 'Jordan'
     },
     {
       'status': true,
@@ -533,11 +525,7 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Korea(South)'
-    },
-    {
-      'status': true,
-      'name': 'Kuwait'
+      'name': 'Kosovo'
     },
     {
       'status': true,
@@ -569,14 +557,6 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Lithuania'
-    },
-    {
-      'status': true,
-      'name': 'Luxembourg'
-    },
-    {
-      'status': true,
       'name': 'Macedonia'
     },
     {
@@ -589,26 +569,15 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Malaysia'
-    },
-    {
-      '_id': {
-        '$oid': '5f67786817a03523d954edcf'
-      },
-      'status': true,
-      'name': 'Maldives'
-    },
-    {
-      'status': true,
       'name': 'Mali'
     },
     {
       'status': true,
-      'name': 'Malta'
+      'name': 'Marshall Island'
     },
     {
       'status': true,
-      'name': 'Marshall Island'
+      'name': 'Mauritania'
     },
     {
       'status': true,
@@ -628,10 +597,6 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Monaco'
-    },
-    {
-      'status': true,
       'name': 'Mongolia'
     },
     {
@@ -641,10 +606,6 @@ module.exports = {
     {
       'status': true,
       'name': 'Morocco'
-    },
-    {
-      'status': true,
-      'name': 'Mozambique'
     },
     {
       'status': true,
@@ -660,18 +621,6 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Nepal'
-    },
-    {
-      'status': true,
-      'name': 'Netherlands'
-    },
-    {
-      'status': true,
-      'name': 'New Zealand'
-    },
-    {
-      'status': true,
       'name': 'Nicaragua'
     },
     {
@@ -680,19 +629,15 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Kosovo'
-    },
-    {
-      'status': true,
-      'name': 'Norway'
-    },
-    {
-      'status': true,
-      'name': 'Oman'
+      'name': 'Nigeria'
     },
     {
       'status': true,
       'name': 'Palau'
+    },
+    {
+      'status': true,
+      'name': 'Palestinian Territory, Occupied'
     },
     {
       'status': true,
@@ -704,19 +649,7 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Paraguay'
-    },
-    {
-      'status': true,
       'name': 'Peru'
-    },
-    {
-      'status': true,
-      'name': 'Philippine'
-    },
-    {
-      'status': true,
-      'name': 'Poland'
     },
     {
       'status': true,
@@ -724,27 +657,7 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Qatar'
-    },
-    {
-      'status': true,
       'name': 'Romania'
-    },
-    {
-      'status': true,
-      'name': 'Russia'
-    },
-    {
-      'status': true,
-      'name': 'Rwanda'
-    },
-    {
-      'status': true,
-      'name': 'Saint Kitts and Nevis'
-    },
-    {
-      'status': true,
-      'name': 'Saint Lucia'
     },
     {
       'status': true,
@@ -757,10 +670,6 @@ module.exports = {
     {
       'status': true,
       'name': 'Sao Tome and Principe'
-    },
-    {
-      'status': true,
-      'name': 'Saudi Arabia'
     },
     {
       'status': true,
@@ -780,10 +689,6 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Singapore'
-    },
-    {
-      'status': true,
       'name': 'Slovakia Republic'
     },
     {
@@ -796,15 +701,19 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'South Africa'
+      'name': 'Somalia'
     },
     {
       'status': true,
-      'name': 'Spain'
+      'name': 'South Sudan'
     },
     {
       'status': true,
-      'name': 'SriLanka'
+      'name': 'State of Libya'
+    },
+    {
+      'status': true,
+      'name': 'Sudan'
     },
     {
       'status': true,
@@ -812,23 +721,11 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Sweden'
+      'name': 'Swaziland'
     },
     {
       'status': true,
-      'name': 'Switzerland'
-    },
-    {
-      'status': true,
-      'name': 'Tajikistan'
-    },
-    {
-      'status': true,
-      'name': 'Tanzania'
-    },
-    {
-      'status': true,
-      'name': 'Thailand'
+      'name': 'Syria'
     },
     {
       'status': true,
@@ -840,39 +737,11 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Tonga'
-    },
-    {
-      'status': true,
-      'name': 'Trinidad & Tobago'
-    },
-    {
-      'status': true,
-      'name': 'Tunisia'
-    },
-    {
-      'status': true,
-      'name': 'Turkey'
-    },
-    {
-      'status': true,
       'name': 'Turkmenistan'
     },
     {
       'status': true,
       'name': 'Tuvalu'
-    },
-    {
-      'status': true,
-      'name': 'U.A.E'
-    },
-    {
-      'status': true,
-      'name': 'U.K.'
-    },
-    {
-      'status': true,
-      'name': 'U.S.A'
     },
     {
       'status': true,
@@ -900,15 +769,11 @@ module.exports = {
     },
     {
       'status': true,
-      'name': 'Viet Nam'
+      'name': 'Vietnam'
     },
     {
       'status': true,
-      'name': 'Western Samoa'
-    },
-    {
-      'status': true,
-      'name': 'Zambia'
+      'name': 'Yemen'
     },
     {
       'status': true,
@@ -916,259 +781,20 @@ module.exports = {
     }
   ],
   // countries visa status
+
   'countryStatus': [
     {
-      'name': 'Angola',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Argentina',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Austria',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Azerbaijan',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Bahamas',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Bahrain',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Barbados',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Botswana',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Brunei',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Costa Rica',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Finland',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Germany',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Ghana',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Iceland',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Indonesia',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Italy',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Japan',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Jordan',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Korea (South)',
+      'name': 'Afghanistan',
       'onArrival': false,
-      'online': true
-    },
-    {
-      'name': 'Kuwait',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Lithuania',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Luxembourg',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Malaysia',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Maldives',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Malta',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Monaco',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Mozambique',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Nepal',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'New Zealand',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Oman',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Paraguay',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Qatar',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Rwanda',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Saint Kitts and Nevis',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Saint Lucia',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Saudi Arabia',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Singapore',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Spain',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Sri Lanka',
-      'onArrival': false,
-      'online': true
-    },
-    {
-      'name': 'Switzerland',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Tajikistan',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Tanzania',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Thailand',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Tonga',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Trinidad & Tobago',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Tunisia',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Turkey',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'UAE',
-      'onArrival': false,
-      'online': true
-    },
-    {
-      'name': 'Western Samoa',
-      'onArrival': true,
-      'online': true
-    },
-    {
-      'name': 'Zambia',
-      'onArrival': true,
       'online': true
     },
     {
       'name': 'Albania',
+      'onArrival': false,
+      'online': true
+    },
+    {
+      'name': 'Algeria',
       'onArrival': false,
       'online': true
     },
@@ -1178,19 +804,54 @@ module.exports = {
       'online': true
     },
     {
+      'name': 'Angola',
+      'onArrival': true,
+      'online': false
+    },
+    {
       'name': 'Antigua and Barbuda',
       'onArrival': false,
       'online': true
     },
     {
+      'name': 'Argentina',
+      'onArrival': true,
+      'online': false
+    },
+    {
       'name': 'Australia',
-      'onArrival': false,
-      'online': true
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Austria',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Azerbaijan',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Bahamas',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Bahrain',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Bangladesh',
       'onArrival': false,
       'online': true
+    },
+    {
+      'name': 'Barbados',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Belarus',
@@ -1213,19 +874,34 @@ module.exports = {
       'online': true
     },
     {
+      'name': 'Bhutan',
+      'onArrival': false,
+      'online': true
+    },
+    {
       'name': 'Bolivia',
       'onArrival': false,
       'online': true
     },
     {
-      'name': 'Bosnia & Herzegovina',
+      'name': 'Bosnia and Herzegovina',
       'onArrival': false,
       'online': true
+    },
+    {
+      'name': 'Botswana',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Brazil',
       'onArrival': false,
       'online': true
+    },
+    {
+      'name': 'Brunei',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Bulgaria',
@@ -1254,16 +930,21 @@ module.exports = {
     },
     {
       'name': 'Canada',
-      'onArrival': false,
-      'online': true
+      'onArrival': true,
+      'online': false
     },
     {
-      'name': 'Capbo Verde',
+      'name': 'Cape Verde',
       'onArrival': false,
       'online': true
     },
     {
       'name': 'Central African Republic',
+      'onArrival': false,
+      'online': true
+    },
+    {
+      'name': 'Chad',
       'onArrival': false,
       'online': true
     },
@@ -1274,8 +955,8 @@ module.exports = {
     },
     {
       'name': 'China',
-      'onArrival': false,
-      'online': true
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Colombia',
@@ -1291,6 +972,16 @@ module.exports = {
       'name': 'Congo (Republic)',
       'onArrival': false,
       'online': true
+    },
+    {
+      'name': 'Congo Democratic Republic',
+      'onArrival': false,
+      'online': true
+    },
+    {
+      'name': 'Costa Rica',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': "Cote d' Ivoire (Ivory Coast)",
@@ -1314,6 +1005,11 @@ module.exports = {
     },
     {
       'name': 'Czech Republic',
+      'onArrival': false,
+      'online': true
+    },
+    {
+      'name': 'Democratic People Republic of Korea',
       'onArrival': false,
       'online': true
     },
@@ -1378,9 +1074,14 @@ module.exports = {
       'online': true
     },
     {
+      'name': 'Finland',
+      'onArrival': true,
+      'online': false
+    },
+    {
       'name': 'France',
-      'onArrival': false,
-      'online': true
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Gabon',
@@ -1396,6 +1097,16 @@ module.exports = {
       'name': 'Georgia',
       'onArrival': false,
       'online': true
+    },
+    {
+      'name': 'Germany',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Ghana',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Greece',
@@ -1448,7 +1159,22 @@ module.exports = {
       'online': true
     },
     {
+      'name': 'Iceland',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Indonesia',
+      'onArrival': true,
+      'online': false
+    },
+    {
       'name': 'Iran',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Iraq',
       'onArrival': false,
       'online': true
     },
@@ -1458,9 +1184,24 @@ module.exports = {
       'online': true
     },
     {
+      'name': 'Italy',
+      'onArrival': true,
+      'online': false
+    },
+    {
       'name': 'Jamaica',
       'onArrival': false,
       'online': true
+    },
+    {
+      'name': 'Japan',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Jordan',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Kazakhstan',
@@ -1478,9 +1219,19 @@ module.exports = {
       'online': true
     },
     {
-      'name': 'Korea(South)',
+      'name': 'Korea (South)',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Kosovo',
       'onArrival': false,
       'online': true
+    },
+    {
+      'name': 'Kuwait',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Kyrgyzstan',
@@ -1518,6 +1269,16 @@ module.exports = {
       'online': true
     },
     {
+      'name': 'Lithuania',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Luxembourg',
+      'onArrival': true,
+      'online': false
+    },
+    {
       'name': 'Macedonia',
       'onArrival': false,
       'online': true
@@ -1533,9 +1294,14 @@ module.exports = {
       'online': true
     },
     {
-      '_id': {
-        '$oid': '5f67786817a03523d954edcf'
-      }
+      'name': 'Malaysia',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Maldives',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Mali',
@@ -1543,7 +1309,17 @@ module.exports = {
       'online': true
     },
     {
-      'name': 'Marshall Island',
+      'name': 'Malta',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Marshall Islands',
+      'onArrival': false,
+      'online': true
+    },
+    {
+      'name': 'Mauritania',
       'onArrival': false,
       'online': true
     },
@@ -1568,6 +1344,11 @@ module.exports = {
       'online': true
     },
     {
+      'name': 'Monaco',
+      'onArrival': true,
+      'online': false
+    },
+    {
       'name': 'Mongolia',
       'onArrival': false,
       'online': true
@@ -1581,6 +1362,11 @@ module.exports = {
       'name': 'Morocco',
       'onArrival': false,
       'online': true
+    },
+    {
+      'name': 'Mozambique',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Myanmar',
@@ -1598,9 +1384,19 @@ module.exports = {
       'online': true
     },
     {
+      'name': 'Nepal',
+      'onArrival': true,
+      'online': false
+    },
+    {
       'name': 'Netherlands',
-      'onArrival': false,
-      'online': true
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'New Zealand',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Nicaragua',
@@ -1613,17 +1409,27 @@ module.exports = {
       'online': true
     },
     {
-      'name': 'Kosovo',
+      'name': 'Nigeria',
       'onArrival': false,
       'online': true
     },
     {
       'name': 'Norway',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Oman',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Palau',
       'onArrival': false,
       'online': true
     },
     {
-      'name': 'Palau',
+      'name': 'Palestinian Territory, Occupied',
       'onArrival': false,
       'online': true
     },
@@ -1638,19 +1444,24 @@ module.exports = {
       'online': true
     },
     {
+      'name': 'Paraguay',
+      'onArrival': true,
+      'online': false
+    },
+    {
       'name': 'Peru',
       'onArrival': false,
       'online': true
     },
     {
-      'name': 'Philippine',
-      'onArrival': false,
-      'online': true
+      'name': 'Philippines',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Poland',
-      'onArrival': false,
-      'online': true
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Portugal',
@@ -1658,14 +1469,34 @@ module.exports = {
       'online': true
     },
     {
+      'name': 'Qatar',
+      'onArrival': true,
+      'online': false
+    },
+    {
       'name': 'Romania',
       'onArrival': false,
       'online': true
     },
     {
-      'name': 'Russia',
+      'name': 'Russian Federation',
       'onArrival': false,
       'online': true
+    },
+    {
+      'name': 'Rwanda',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Saint Kitts and Nevis',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Saint Lucia',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Saint Vincent and the Grenadines',
@@ -1681,6 +1512,11 @@ module.exports = {
       'name': 'Sao Tome and Principe',
       'onArrival': false,
       'online': true
+    },
+    {
+      'name': 'Saudi Arabia',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Senegal',
@@ -1703,6 +1539,11 @@ module.exports = {
       'online': true
     },
     {
+      'name': 'Singapore',
+      'onArrival': true,
+      'online': false
+    },
+    {
       'name': 'Slovakia Republic',
       'onArrival': false,
       'online': true
@@ -1718,12 +1559,37 @@ module.exports = {
       'online': true
     },
     {
-      'name': 'South Africa',
+      'name': 'Somalia',
       'onArrival': false,
       'online': true
     },
     {
-      'name': 'SriLanka',
+      'name': 'South Africa',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'South Sudan',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Spain',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Sri Lanka',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'State of Libya',
+      'onArrival': false,
+      'online': true
+    },
+    {
+      'name': 'Sudan',
       'onArrival': false,
       'online': true
     },
@@ -1733,12 +1599,42 @@ module.exports = {
       'online': true
     },
     {
-      'name': 'Sweden',
+      'name': 'Swaziland',
       'onArrival': false,
       'online': true
     },
     {
-      'name': 'Timor-Lest',
+      'name': 'Sweden',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Switzerland',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Syria',
+      'onArrival': false,
+      'online': true
+    },
+    {
+      'name': 'Tajikistan',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Tanzania',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Thailand',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Timor-Leste',
       'onArrival': false,
       'online': true
     },
@@ -1746,6 +1642,26 @@ module.exports = {
       'name': 'Togo',
       'onArrival': false,
       'online': true
+    },
+    {
+      'name': 'Tonga',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Trinidad and Tobago',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Tunisia',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Turkey',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Turkmenistan',
@@ -1758,21 +1674,6 @@ module.exports = {
       'online': true
     },
     {
-      'name': 'U.A.E',
-      'onArrival': false,
-      'online': true
-    },
-    {
-      'name': 'U.K.',
-      'onArrival': false,
-      'online': true
-    },
-    {
-      'name': 'U.S.A',
-      'onArrival': false,
-      'online': true
-    },
-    {
       'name': 'Uganda',
       'onArrival': false,
       'online': true
@@ -1781,6 +1682,21 @@ module.exports = {
       'name': 'Ukraine',
       'onArrival': false,
       'online': true
+    },
+    {
+      'name': 'United Arab Emirates',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'United Kingdom',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'United States of America (USA)',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Uruguay',
@@ -1803,9 +1719,24 @@ module.exports = {
       'online': true
     },
     {
-      'name': 'Viet Nam',
+      'name': 'Vietnam',
       'onArrival': false,
       'online': true
+    },
+    {
+      'name': 'Western Samoa',
+      'onArrival': true,
+      'online': false
+    },
+    {
+      'name': 'Yemen',
+      'onArrival': false,
+      'online': true
+    },
+    {
+      'name': 'Zambia',
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Zimbabwe',

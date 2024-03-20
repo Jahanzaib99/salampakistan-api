@@ -33,7 +33,7 @@ let config = convict({
     host: {
       doc: 'Database host name/IP',
       format: String,
-      default: 'data02.salampakistan.gov.pk'
+      default: '172.19.20.30'
     },
     port: {
       doc: 'Database port',
@@ -122,12 +122,14 @@ let config = convict({
     upload: {
       doc: 'Upload Route',
       format: String,
-      default: path.join(__dirname, '../../../../../../mnt/data/pictures/')
+      // default: path.join(__dirname, '../../../../../../mnt/data/pictures/')
+      default: path.join(__dirname, '../../../../pictures/')
     },
     remove: {
       doc: 'Remove Route',
       format: String,
-      default: path.join(__dirname, '../../../../../../mnt/data/pictures/')
+      // default: path.join(__dirname, '../../../../../../mnt/data/pictures/')
+      default: path.join(__dirname, '../../../../pictures/')
     }
   }
 });

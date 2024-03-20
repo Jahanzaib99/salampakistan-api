@@ -149,8 +149,8 @@ function update(payload) {
       facilities: validations.rules.arrayOfObjectIds('facilities'),
       // status: validations.rules.tripStatus,
       cancellationPolicy: validations.rules.cancellationPolicy,
-      vendorId: validations.rules.ObjectId('vendorId'),
-      contact: validations.rules.textRequired('contact')
+      vendorId: validations.rules.ObjectId('vendorId')
+      // contact: validations.rules.textRequired('contact')
     }
   })
     .then(repos.trip.findById.bind(this, payload.tripId))

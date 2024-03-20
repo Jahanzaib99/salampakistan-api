@@ -40,7 +40,7 @@ server.get(/(^\/$)|(\.(html|js|css|scss|png|jpg|gif|svg|tff|otf|eot|woff|woff2)$
 server.get(
   /\/(.*)?.*/,
   restify.plugins.serveStatic({
-    directory: path.join(__dirname, '../../../../../mnt/data/pictures/')
+    directory: path.join(__dirname, '../../../pictures/')
   })
 );
 
