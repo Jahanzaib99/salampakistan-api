@@ -1480,8 +1480,8 @@ module.exports = {
     },
     {
       'name': 'Russian Federation',
-      'onArrival': false,
-      'online': true
+      'onArrival': true,
+      'online': false
     },
     {
       'name': 'Rwanda',
