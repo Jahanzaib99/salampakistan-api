@@ -1570,8 +1570,8 @@ module.exports = {
     },
     {
       'name': 'South Sudan',
-      'onArrival': true,
-      'online': false
+      'onArrival': false,
+      'online': true
     },
     {
       'name': 'Spain',
