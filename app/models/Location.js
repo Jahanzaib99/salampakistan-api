@@ -24,6 +24,11 @@ let schema = new mongoose.Schema({
   alias: { type: String },
   description: { type: String },
   longDescription: { type: String },
+  gettingThere: { type: String },
+  whatToDo: { type: String },
+  timeToVisit: { type: String },
+  whereToStay: { type: String },
+  additionalInformation: { type: String },
   locationType: { type: String, default: '' },
   parentProvince: { type: String, default: '' },
   parentCategories: [{
