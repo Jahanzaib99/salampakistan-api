@@ -28,6 +28,7 @@ let schema = new mongoose.Schema({
   whatToDo: { type: String },
   timeToVisit: { type: String },
   whereToStay: { type: String },
+  order: { type: String},
   additionalInformation: { type: String },
   locationType: { type: String, default: '' },
   parentProvince: { type: String, default: '' },

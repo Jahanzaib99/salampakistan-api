@@ -118,6 +118,8 @@ function get(req, res, next) {
     pageSize: req.query.pageSize
   };
   return services.location.get(payload).then((response) => {
+    // const sortedResponse = response.sort((a, b) => b.order - a.order);
+    console.log(response);
     res.send(200, response);
   }
   ).catch(next);
@@ -174,6 +176,7 @@ function update(req, res, next) {
   let payload = {
     locationId: req.params.locationId,
     name: req.body.name,
+    order: req.body.order,
     alias: req.body.alias,
     description: req.body.description,
     longDescription: req.body.longDescription,

@@ -78,6 +78,7 @@ function get(payload) {
     .then(repos.location.get)
     .then(helpers.tag.adjustListResponse)
     .then((response) => {
+      // let sortedData = response.data.sort((a, b) => Number(b.order) - Number(a.order));
       return Promise.resolve({
         data: response.data,
         meta: {

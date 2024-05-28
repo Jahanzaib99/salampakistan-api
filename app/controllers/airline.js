@@ -248,19 +248,38 @@ function searchAirports(req, res, next) {
  */
 
 function searchAir(req, res, next) {
+  // let payload = {
+  //   // pageSize: req.query.pageSize,
+  //   // skip: req.query.skip,
+  //   // sortBy: req.query.sortBy,
+  //   // departureCityName: req.query.departureCityName,
+  //   destinationCityName: req.query.destinationCityName,
+  //   dep_date: req.query.dep_date,
+  //   return_date: req.query.return_date,
+  //   adultsCount: req.query.no_of_adults,
+  //   no_of_children: req.query.no_of_children,
+  //   no_of_infants: req.query.no_of_infants,
+  //   cabin: req.query.cabin,
+  //   legs: JSON.parse(req.query.legs)
+  // };
+
   let payload = {
     pageSize: req.query.pageSize,
     skip: req.query.skip,
     sortBy: req.query.sortBy,
-    departureCityName: req.query.departureCityName,
     destinationCityName: req.query.destinationCityName,
     dep_date: req.query.dep_date,
     return_date: req.query.return_date,
-    no_of_adults: req.query.no_of_adults,
-    no_of_children: req.query.no_of_children,
-    no_of_infants: req.query.no_of_infants,
-    cabin: req.query.cabin
+    adultsCount: req.query.no_of_adults,
+    childrenCount: req.query.no_of_children,
+    infantsCount: req.query.no_of_infants,
+    cabin: req.query.cabin,
+    currencyCode: req.query.currencyCode,
+    locale: req.query.locale,
+    flightTrip: req.query.flightTrip,
+    legs: [JSON.parse(req.query.legs)]
   };
+
   return services.airline.searchAir(payload)
     .then((response) => {
       res.send(response);

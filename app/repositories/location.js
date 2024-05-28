@@ -45,6 +45,7 @@ async function create(payload) {
     whatToDo: payload.whatToDo,
     timeToVisit: payload.timeToVisit,
     whereToStay: payload.whereToStay,
+    order: payload.order,
     additionalInformation: payload.additionalInformation,
     locationType: payload.locationType,
     location: payload.location,
@@ -110,7 +111,7 @@ function get(payload) {
     $match: matchObj
   },
   {
-    $sort: { createdAt: -1 }
+    $sort: { order: -1, createdAt: -1 }
   },
   {
     $project: {
@@ -126,6 +127,7 @@ function get(payload) {
       whatToDo: 1,
       timeToVisit: 1,
       whereToStay: 1,
+      order: 1,
       additionalInformation: 1,
       slug: 1,
       url: 1,
@@ -218,6 +220,7 @@ function update(payload) {
     whatToDo: payload.whatToDo,
     timeToVisit: payload.timeToVisit,
     whereToStay: payload.whereToStay,
+    order: payload.order,
     additionalInformation: payload.additionalInformation,
     parentCategories: payload.parentCategories,
     parentActivities: payload.parentActivities,
@@ -336,6 +339,7 @@ function findDetails(identifier) {
         timeToVisit: 1,
         whereToStay: 1,
         additionalInformation: 1,
+        order: 1,
         slug: 1,
         url: 1,
         photoIds: 1,
